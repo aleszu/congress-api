@@ -62,7 +62,7 @@ Here, an example of a [statement](https://www.heitkamp.senate.gov/public/index.c
 
 # A shallow dive into the data
 
-Using a pivot table with our data, we reveal the spike of statements issued just after Trump fired Comey.  
+Using a pivot table with our data, we reveal the spike of statements issued just after Trump fired Comey, which happened on the [afternoon](http://www.npr.org/2017/05/15/527773206/what-just-happened-the-james-comey-saga-in-timeline-form) of May 9.
 
 ### Statements about James Comey released by Congress in May 2017
 
