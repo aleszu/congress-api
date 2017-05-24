@@ -53,7 +53,7 @@ Then move file1.csv into that same directory and stack it together with final.cs
 
 # Open up your CSV
 
-
+![](storybench.org/assets/comey-api-call.png)
 
 # The following will generate the same results but add a whole lot more JSON that needs to be stripped out. 
 
