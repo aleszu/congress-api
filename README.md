@@ -58,7 +58,7 @@ Then move file1.csv into that same directory and stack it together with final.cs
 
 Here, an example of a [statement](https://www.heitkamp.senate.gov/public/index.cfm/press-releases?ID=752050F4-BD1C-4D47-855C-78BAAD99CD7C) released on May 10 about Comey's firing:
 
-![]()
+![](http://storybench.org/assets/heitkamp-comey.png)
 
 # The following will generate the same results but add a whole lot more JSON that needs to be stripped out. 
 
@@ -72,7 +72,7 @@ done > file.json
 
 ### Statements about James Comey released by Congress in May 2017
 
-
+![](http://storybench.org/assets/comey-chart.png)
 
 
 
