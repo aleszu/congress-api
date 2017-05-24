@@ -12,8 +12,7 @@ Before doing anything, it's a good idea to write out your workflow, i.e. what yo
 * Save results into a JSON file.
 * Convert JSON files into CSVs.
 * Stack all CSVs into one master CSV.
-* Open the master CSV, filter down by senators and by date, then click through to the URLs of each senator's statement on Comey.
-* Add a new column to the CSV titled "Gist" and manually rank these responses according to what the *L.A. Times* used: *Willing to let the investigation play out, Noncommittal, Expressed concerns, Calls for a special prosecutor or investigation, No public statement.*
+* Open the master CSV, filter down by senators and by date, then click through to the URLs of each senator's statement on Comey. Rank these manually by adding a column titled "Gist" and using what the *L.A. Times* used: *Willing to let the investigation play out, Noncommittal, Expressed concerns, Calls for a special prosecutor or investigation, No public statement.*
 
 # Make Congress API call through the command line 
 
@@ -55,6 +54,12 @@ Then move file1.csv into that same directory and stack it together with final.cs
 
 ![](http://storybench.org/assets/comey-api-call.png)
 
+# Look through the statements
+
+Here, an example of a [statement](https://www.heitkamp.senate.gov/public/index.cfm/press-releases?ID=752050F4-BD1C-4D47-855C-78BAAD99CD7C) released on May 10 about Comey's firing:
+
+![]()
+
 # The following will generate the same results but add a whole lot more JSON that needs to be stripped out. 
 
 ```
@@ -63,3 +68,11 @@ for ((i=0;i<=300;i+=20));
 	"https://api.propublica.org/congress/v1/statements/search.json?query=MY_SEARCH_TERM_HERE&offset=$i"; 
 done > file.json
 ```
+# A shallow dive into the data
+
+### Statements about James Comey released by Congress in May 2017
+
+
+
+
+
