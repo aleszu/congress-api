@@ -60,7 +60,19 @@ Here, an example of a [statement](https://www.heitkamp.senate.gov/public/index.c
 
 ![](http://storybench.org/assets/heitkamp-comey.png)
 
-# The following will generate the same results but add a whole lot more JSON that needs to be stripped out. 
+# A shallow dive into the data
+
+Using a pivot table with our data, we reveal the spike of statements issued just after Trump fired Comey.  
+
+### Statements about James Comey released by Congress in May 2017
+
+![](http://storybench.org/assets/comey-chart.png)
+
+# The pagination problem 
+
+The Congress API only allows you to retrieve 20 results per query, which is why we had to change the offset value to "paginate" through their results. But the process of having to download 17 JSON files is a bit time-consuming (~ 1 minute each). Is there an easier way?
+
+The following will retrieve the same results and save them all into one JSON file. 
 
 ```
 for ((i=0;i<=300;i+=20)); 
@@ -68,11 +80,9 @@ for ((i=0;i<=300;i+=20));
 	"https://api.propublica.org/congress/v1/statements/search.json?query=MY_SEARCH_TERM_HERE&offset=$i"; 
 done > file.json
 ```
-# A shallow dive into the data
+Unfortunately, this method introduces some extraneous JSON that ProPublica adds: ("status":"OK", "copyright":"Copyright (c) 2017 Pro Publica Inc. All Rights Reserved.", etc.). If anyone has suggestions to improve this, please send along!
 
-### Statements about James Comey released by Congress in May 2017
 
-![](http://storybench.org/assets/comey-chart.png)
 
 
 
